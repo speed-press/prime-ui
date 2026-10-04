@@ -1,0 +1,8 @@
+#toplevel_page_speedpress-addons .wp-menu-image img {
+	width: 20px !important;
+	height: 20px !important;
+	padding: 6px 0 0 !important;
+	opacity: 1 !important;
+}
+#toplevel_page_speedpress-addons .wp-menu-image { background: none !important; }
+#toplevel_page_speedpress-addons .wp-menu-image:before { content: none !important; display: none !important; }

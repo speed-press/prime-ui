@@ -1,0 +1,95 @@
+.spae-app {
+  --spae-a: #2563eb;
+  --spae-b: #9333ea;
+  --spae-ink: #0f172a;
+  --spae-muted: #64748b;
+  --spae-line: #e2e8f0;
+  --spae-card: #ffffff;
+  max-width: 1180px;
+  margin: 18px 20px 40px 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+  color: var(--spae-ink);
+}
+.spae-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  padding: 28px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.25);
+}
+.spae-brand { display: flex; gap: 16px; align-items: center; }
+.spae-mark {
+  width: 56px; height: 56px; border-radius: 16px;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.28);
+  display: grid; place-items: center;
+  font-weight: 800; letter-spacing: -0.04em; font-size: 20px;
+}
+.spae-hero h1 { margin: 0 0 4px; font-size: 28px; color: #fff; }
+.spae-hero p { margin: 0; opacity: .88; }
+.spae-stats { display: flex; gap: 10px; }
+.spae-stat {
+  min-width: 96px; padding: 12px 14px; border-radius: 14px;
+  background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.2);
+}
+.spae-stat strong { display: block; font-size: 22px; }
+.spae-stat span { font-size: 12px; opacity: .85; }
+.spae-toolbar {
+  margin: 18px 0;
+  display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  background: #fff; border: 1px solid var(--spae-line); border-radius: 16px; padding: 12px;
+}
+.spae-search {
+  flex: 1; min-width: 220px; border: 1px solid var(--spae-line); border-radius: 12px;
+  padding: 10px 12px; font: inherit;
+}
+.spae-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.spae-pillbtn, .spae-btn {
+  border: 1px solid var(--spae-line); background: #fff; border-radius: 999px;
+  padding: 8px 12px; cursor: pointer; font: inherit; font-size: 13px;
+}
+.spae-pillbtn.is-on, .spae-btn-primary {
+  color: #fff; border-color: transparent;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+}
+.spae-grid-admin {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;
+}
+.spae-wcard {
+  background: var(--spae-card); border: 1px solid var(--spae-line); border-radius: 16px;
+  padding: 16px; display: flex; gap: 12px; align-items: flex-start;
+  box-shadow: 0 1px 0 rgba(15,23,42,.02);
+}
+.spae-wcard.is-off { opacity: .62; }
+.spae-wcard h3 { margin: 0 0 4px; font-size: 15px; }
+.spae-wcard p { margin: 0; color: var(--spae-muted); font-size: 13px; line-height: 1.4; }
+.spae-tag { display: inline-block; margin-top: 8px; font-size: 11px; color: #6d28d9; background: #f5f3ff; border-radius: 999px; padding: 2px 8px; }
+.spae-switch { position: relative; width: 42px; height: 24px; flex: 0 0 42px; }
+.spae-switch input { opacity: 0; width: 0; height: 0; }
+.spae-switch span {
+  position: absolute; inset: 0; background: #cbd5e1; border-radius: 999px; cursor: pointer; transition: .2s;
+}
+.spae-switch span:before {
+  content: ""; position: absolute; width: 18px; height: 18px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: .2s;
+}
+.spae-switch input:checked + span { background: linear-gradient(135deg, #2563eb, #9333ea); }
+.spae-switch input:checked + span:before { transform: translateX(18px); }
+.spae-savebar {
+  position: sticky; bottom: 12px; margin-top: 16px; display: flex; justify-content: space-between; align-items: center;
+  background: #0f172a; color: #fff; border-radius: 16px; padding: 12px 14px;
+}
+.spae-savebar .button-primary {
+  background: linear-gradient(135deg, #2563eb, #9333ea) !important; border: 0 !important; border-radius: 999px !important; padding: 6px 16px !important;
+}
+.spae-logo { width: 52px; height: 52px; border-radius: 14px; }
+.spae-kicker { text-transform: uppercase; letter-spacing: .08em; font-size: 11px; font-weight: 800; opacity: .8; }
+.spae-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 20px; padding: 20px; margin-top: 16px; }
+.spae-app .widefat { border: 0; }
+@media (max-width: 782px) {
+  .spae-hero, .spae-toolbar { display: block; }
+  .spae-stats { margin-top: 14px; }
+}
